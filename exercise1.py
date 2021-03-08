@@ -2,8 +2,9 @@
 
 import os
 
-path_components = os.getcwd()
-path_components = path_components.split('/')
-path_components = path_components[1:]
-
-print(path_components)
+def get_path_components():
+	path_components = os.getcwd()
+	path_components = path_components.split('/')
+	path_components = path_components[1:]
+	return path_components
+print(get_path_components())
